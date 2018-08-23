@@ -1,0 +1,49 @@
+.side-space {
+  padding: 0 2%; }
+
+.filter-org {
+  height: 80px;
+  overflow: hidden; }
+  .filter-org > div {
+    margin-top: 20px; }
+    .filter-org > div p {
+      text-align: center; }
+    .filter-org > div .start-date {
+      margin-left: 20px; }
+
+.area-trend {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee; }
+  .area-trend .title {
+    font-size: 20px;
+    line-height: 44px;
+    color: #333; }
+  .area-trend .area {
+    border-right: 1px solid #eee; }
+    .area-trend .area .area-table {
+      margin-right: 10px; }
+  .area-trend .trend .title {
+    margin-left: 10px; }
+  .area-trend .trend button {
+    height: 40px;
+    margin: 9px 10px; }
+
+.eaharts > div {
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee; }
+
+.echarts-area {
+  height: 400px; }
+
+.eaharts-title {
+  height: 40px;
+  font-size: 20px;
+  line-height: 44px;
+  color: #333;
+  margin-left: 10px; }
+
+#trend-analysis {
+  width: 100%;
+  height: 393px; }
+
+/*# sourceMappingURL=page.css.map */

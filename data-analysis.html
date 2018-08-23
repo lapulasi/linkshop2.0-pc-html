@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数据分析</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/page.css">
+    <script src="js/echarts.min.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="filter-org">
+        <div class="row side-space">
+            <button class="btn btn-primary col-1">筛选组织</button>
+            <input type="text" class="form-control col-1 start-date">
+            <p class="col-1">-------</p>
+            <input type="text" class="form-control col-1">
+        </div>
+    </div>
+
+    <div class="row area-trend side-space">
+        <div class="col-5 area">
+            <p class="row title">区域表现</p>
+            <div class="row area-table">
+                <table class="table">
+                    <thead class="thead-light">
+                    <tr>
+                        <th scope="col">排名</th>
+                        <th scope="col">名称</th>
+                        <th scope="col">客流</th>
+                        <th scope="col">驻留</th>
+                        <th scope="col">集客力</th>
+                        <th scope="col">坪效</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>南山苏宁</td>
+                        <td>33</td>
+                        <td>22</td>
+                        <td>34</td>
+                        <td>43</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>南山苏宁</td>
+                        <td>33</td>
+                        <td>22</td>
+                        <td>34</td>
+                        <td>43</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>南山苏宁</td>
+                        <td>33</td>
+                        <td>22</td>
+                        <td>34</td>
+                        <td>43</td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td>南山苏宁</td>
+                        <td>33</td>
+                        <td>22</td>
+                        <td>34</td>
+                        <td>43</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>南山苏宁</td>
+                        <td>33</td>
+                        <td>22</td>
+                        <td>34</td>
+                        <td>43</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>南山苏宁</td>
+                        <td>33</td>
+                        <td>22</td>
+                        <td>34</td>
+                        <td>43</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>南山苏宁</td>
+                        <td>33</td>
+                        <td>22</td>
+                        <td>34</td>
+                        <td>43</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="col-7 trend">
+            <div class="row">
+                <p class="title col-7">趋势分析</p>
+                <button class="btn btn-outline-secondary col-1">按日</button>
+                <button class="btn btn-outline-secondary col-1">按周</button>
+                <button class="btn btn-outline-secondary col-1">按月</button>
+            </div>
+            <div class="row">
+                <div id="trend-analysis"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row eaharts">
+        <div class="col">
+            <p class="row eaharts-title">人流结构</p>
+            <div class="row echarts-area" id="passenger-flow"></div>
+        </div>
+        <div class="col">
+            <p class="row eaharts-title">顾客最多时段</p>
+            <div class="row echarts-area" id="passenger-max-time"></div>
+        </div>
+        <div class="col">
+            <p class="row eaharts-title">顾客到店趋势</p>
+            <div class="row echarts-area" id="passenger-arrived-shop-trend"></div>
+        </div>
+        <div class="col">
+            <p class="row eaharts-title">各店人流占比</p>
+            <div class="row echarts-area" id="passenger-store-percentage"></div>
+        </div>
+    </div>
+
+    <div class="row eaharts">
+        <div class="col">
+            <p class="row eaharts-title">驻留结构</p>
+            <div class="row echarts-area" id="flow"></div>
+        </div>
+        <div class="col">
+            <p class="row eaharts-title">驻留最多时段</p>
+            <div class="row echarts-area" id="flow-max-time"></div>
+        </div>
+        <div class="col">
+            <p class="row eaharts-title">顾客驻留趋势</p>
+            <div class="row echarts-area" id="passenger-flow-trend"></div>
+        </div>
+        <div class="col">
+            <p class="row eaharts-title">各店驻留占比</p>
+            <div class="row echarts-area" id="flow-store-percentage"></div>
+        </div>
+    </div>
+
+    <div class="row eaharts">
+        <div class="col">
+            <p class="row eaharts-title">集客力增长趋势</p>
+            <div class="row echarts-area" id="collecting-power-growth-trend"></div>
+        </div>
+        <div class="col">
+            <p class="row eaharts-title">集客力占比</p>
+            <div class="row echarts-area" id="collecting-power-percentage"></div>
+        </div>
+        <div class="col">
+            <p class="row eaharts-title">坪效增长趋势</p>
+            <div class="row echarts-area" id="effect-growth-trend"></div>
+        </div>
+        <div class="col">
+            <p class="row eaharts-title">坪效占比</p>
+            <div class="row echarts-area" id="effect-percentage"></div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-2.1.4.js"></script>
+<script src="js/data-analysis.js"></script>
+<!--<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>-->
+</body>
+</html>
