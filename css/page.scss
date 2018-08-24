@@ -60,6 +60,21 @@ $font_size26: 26px;
     }
   }
 }
+.area-table{
+  span{
+    float: left;
+  }
+  .tips-up{
+    float: left;
+    width: 1rem;
+    height: 1rem;
+    margin-top: 4px;
+    background: url('../images/tips-up.png');
+  }
+  /*td{
+    text-align: center;
+  }*/
+}
 .eaharts{
   >div{
     @include borderDir(right);

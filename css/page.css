@@ -28,6 +28,19 @@
     height: 40px;
     margin: 9px 10px; }
 
+.area-table {
+  /*td{
+    text-align: center;
+  }*/ }
+  .area-table span {
+    float: left; }
+  .area-table .tips-up {
+    float: left;
+    width: 1rem;
+    height: 1rem;
+    margin-top: 4px;
+    background: url("../images/tips-up.png"); }
+
 .eaharts > div {
   border-right: 1px solid #eee;
   border-bottom: 1px solid #eee; }
