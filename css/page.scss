@@ -57,6 +57,10 @@ $font_size26: 26px;
     button{
       height: 40px;
       margin:9px 10px;
+      &.current{
+        background: #6c757d;
+        color: #fff;
+      }
     }
   }
 }

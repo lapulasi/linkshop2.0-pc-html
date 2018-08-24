@@ -27,6 +27,9 @@
   .area-trend .trend button {
     height: 40px;
     margin: 9px 10px; }
+    .area-trend .trend button.current {
+      background: #6c757d;
+      color: #fff; }
 
 .area-table {
   /*td{
