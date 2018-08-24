@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83e09aac-0f2e-4898-bb19-ea78a10a4eab" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/page.css" afterPath="$PROJECT_DIR$/css/page.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/page.css.map" afterPath="$PROJECT_DIR$/css/page.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/page.scss" afterPath="$PROJECT_DIR$/css/page.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data-analysis.html" afterPath="$PROJECT_DIR$/data-analysis.html" />
     </list>
@@ -22,8 +22,8 @@
       <file leaf-file-name="data-analysis.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/data-analysis.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="101" column="70" lean-forward="false" selection-start-line="101" selection-start-column="70" selection-end-line="101" selection-end-column="70" />
+            <state relative-caret-position="217">
+              <caret line="106" column="42" lean-forward="false" selection-start-line="106" selection-start-column="42" selection-end-line="106" selection-end-column="42" />
               <folding>
                 <element signature="n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
@@ -34,8 +34,8 @@
       <file leaf-file-name="page.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/page.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="59" column="15" lean-forward="false" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="15" />
+            <state relative-caret-position="427">
+              <caret line="98" column="1" lean-forward="false" selection-start-line="98" selection-start-column="1" selection-end-line="98" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -43,14 +43,20 @@
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>trend-analysis</find>
+      <find>#</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/css/page.scss" />
         <option value="$PROJECT_DIR$/data-analysis.html" />
+        <option value="$PROJECT_DIR$/css/page.scss" />
       </list>
     </option>
   </component>
@@ -145,12 +151,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1535077935648</updated>
-      <workItem from="1535077936972" duration="1290000" />
+      <workItem from="1535077936972" duration="4089000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1290000" />
+    <option name="totallyTimeSpent" value="4089000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="6" width="1614" height="867" extended-state="0" />
@@ -187,16 +193,16 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/css/page.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="59" column="15" lean-forward="false" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="15" />
+        <state relative-caret-position="427">
+          <caret line="98" column="1" lean-forward="false" selection-start-line="98" selection-start-column="1" selection-end-line="98" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data-analysis.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="101" column="70" lean-forward="false" selection-start-line="101" selection-start-column="70" selection-end-line="101" selection-end-column="70" />
+        <state relative-caret-position="217">
+          <caret line="106" column="42" lean-forward="false" selection-start-line="106" selection-start-column="42" selection-end-line="106" selection-end-column="42" />
           <folding>
             <element signature="n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
