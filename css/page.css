@@ -28,18 +28,16 @@
     height: 40px;
     margin: 9px 10px; }
 
-.area-table {
-  /*td{
-    text-align: center;
-  }*/ }
-  .area-table span {
-    float: left; }
-  .area-table .tips-up {
-    float: left;
-    width: 1rem;
-    height: 1rem;
-    margin-top: 4px;
-    background: url("../images/tips-up.png"); }
+.area-table span {
+  float: left; }
+.area-table .tips-up {
+  float: left;
+  width: 1rem;
+  height: 1rem;
+  margin-top: 4px;
+  background: url("../images/tips-up.png"); }
+.area-table .table {
+  color: #333; }
 
 .eaharts > div {
   border-right: 1px solid #eee;
@@ -109,11 +107,11 @@
   padding-bottom: 20px;
   background-color: #0c121f; }
   .main .side-left {
-    width: 488px;
-    float: left; }
+    width: 400px;
+    float: left;
+    margin-left: 88px; }
     .main .side-left .content {
-      float: left;
-      margin-left: 20px; }
+      float: left; }
   .main .side-right {
     width: 420px;
     float: right; }
@@ -122,7 +120,9 @@
 
 .side-bar {
   width: 68px;
-  float: left; }
+  position: absolute;
+  left: 0;
+  top: 62px; }
   .side-bar li {
     height: 80px;
     border-left: 4px solid #0c121f;
