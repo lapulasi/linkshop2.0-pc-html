@@ -2,6 +2,7 @@ $gray3: #333;
 $gray6: #666;
 $gray9: #999;
 $borderColor: #eee;
+$fff: #fff;
 
 $font_size18: 18px;
 $font_size20: 20px;
@@ -21,54 +22,53 @@ $font_size26: 26px;
   line-height: $height;
 }
 
-.side-space{
+.side-space {
   padding: 0 2%;
 }
-.filter-org{
+
+.filter-org {
   height: 80px;
   overflow: hidden;
-  >div{
+  > div {
     margin-top: 20px;
-    p{
+    p {
       text-align: center;
     }
-    .start-date{
+    .start-date {
       margin-left: 20px;
     }
   }
 }
-.area-trend{
+
+.area-trend {
   @include borderDir(top);
   @include borderDir(bottom);
-  .title{
+  .title {
     @include font($font_size20, 44px);
     color: $gray3;
   }
-  .area{
+  .area {
     @include borderDir(right);
-    .area-table{
+    .area-table {
       margin-right: 10px;
     }
   }
-  .trend{
-    .title{
+  .trend {
+    .title {
       margin-left: 10px;
     }
-    button{
+    button {
       height: 40px;
-      margin:9px 10px;
-      &.current{
-        background: #6c757d;
-        color: #fff;
-      }
+      margin: 9px 10px;
     }
   }
 }
-.area-table{
-  span{
+
+.area-table {
+  span {
     float: left;
   }
-  .tips-up{
+  .tips-up {
     float: left;
     width: 1rem;
     height: 1rem;
@@ -79,24 +79,347 @@ $font_size26: 26px;
     text-align: center;
   }*/
 }
-.eaharts{
-  >div{
+
+.eaharts {
+  > div {
     @include borderDir(right);
     @include borderDir(bottom);
   }
 }
-.echarts-area{
+
+.echarts-area {
   height: 400px;
 
 }
-.eaharts-title{
+
+.eaharts-title {
   height: 40px;
   @include font($font_size20, 44px);
   color: $gray3;
   margin-left: 10px;
 }
 
-.trend-analysis{
+.trend-analysis {
   width: 100%;
   height: 393px;
+}
+
+.index {
+  //height: 100%;
+}
+
+.top {
+  width: 100%;
+  height: 62px;
+  background-color: #0f1626;
+  .logo {
+    width: 488px;
+    overflow: hidden;
+    float: left;
+    @include font(18px, 28px);
+    li {
+      float: left;
+      &:first-child {
+        margin-left: 10px;
+      }
+      &:last-child {
+        color: $fff;
+        margin-top: 17px;
+        margin-left: 22px;
+      }
+    }
+    img {
+      width: 218px;
+      height: 29px;
+      margin-top: 16px;
+    }
+  }
+  .org-name {
+    margin: 0 420px 0 488px;
+    @include font(24px, 62px);
+    text-align: center;
+    background: url("../images/top-bg.png") center;
+  }
+  .user-info {
+    width: 420px;
+    float: right;
+    @include font(16px, 28px);
+    margin-top: 17px;
+    li {
+      float: right;
+      a {
+        color: $fff;
+        text-decoration: underline;
+      }
+      &:nth-child(2) {
+        margin: 0 10px;
+      }
+      &:first-child {
+        margin-right: 24px;
+      }
+    }
+  }
+}
+
+.main {
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 20px;
+  //height: auto;
+  background-color: #0c121f;
+  .side-left {
+    width: 488px;
+    float: left;
+    .content {
+      float: left;
+      margin-left: 20px;
+    }
+  }
+  .side-right {
+    width: 420px;
+    float: right;
+  }
+  .map-area {
+    margin: 20px 420px 0 488px;
+  }
+}
+
+.side-bar {
+  width: 68px;
+  float: left;
+  li {
+    height: 80px;
+    border-left: 4px solid #0c121f;
+    cursor: pointer;
+    .icon {
+      float: left;
+      width: 26px;
+      height: 26px;
+      margin: 27px 19px;
+    }
+
+    .icon0 {
+      background-image: url("../images/icon0-g.png");
+    }
+
+    .icon1 {
+      background-image: url("../images/icon1-g.png");
+    }
+
+    .icon2 {
+      background-image: url("../images/icon2-g.png");
+    }
+
+    .icon3 {
+      background-image: url("../images/icon3-g.png");
+    }
+
+    .icon4 {
+      background-image: url("../images/icon4-g.png");
+    }
+
+    .icon5 {
+      background-image: url("../images/icon5-g.png");
+    }
+    &.current {
+      border-left: 4px solid #41b0ff;
+      background-color: rgba(65, 176, 255, 0.1);
+      .icon0 {
+        background-image: url("../images/icon0-b.png");
+      }
+      .icon1 {
+        background-image: url("../images/icon1-b.png");
+      }
+      .icon2 {
+        background-image: url("../images/icon2-b.png");
+      }
+      .icon3 {
+        background-image: url("../images/icon3-b.png");
+      }
+      .icon4 {
+        background-image: url("../images/icon4-b.png");
+      }
+      .icon5 {
+        background-image: url("../images/icon5-b.png");
+      }
+    }
+  }
+}
+
+@mixin span-border($dir) {
+  border-#{$dir}: 3px solid #42a9f2;
+}
+
+@mixin border-style($width, $height) {
+  width: $width;
+  height: $height;
+  margin-top: 20px;
+  -moz-box-shadow: 0px 0px 10px 2px rgba(#2f4979, 1) inset;
+  box-shadow: 0px 0px 10px 2px rgba(#2f4979, 1) inset;
+  position: relative;
+  border: 1px solid #2f4979;
+  > span {
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    &.left-top {
+      left: 0;
+      top: 0;
+      @include span-border(left);
+      @include span-border(top);
+    }
+    &.right-top {
+      right: 0;
+      top: 0;
+      @include span-border(top);
+      @include span-border(right);
+    }
+    &.right-bottom {
+      right: 0;
+      bottom: 0;
+      @include span-border(right);
+      @include span-border(bottom);
+    }
+    &.left-bottom {
+      left: 0;
+      bottom: 0;
+      @include span-border(left);
+      @include span-border(bottom);
+    }
+  }
+}
+
+.content-title {
+  height: 54px;
+  @include borderDir(bottom);
+  border-color: #2f4979;
+  @include font(18px, 54px);
+  text-indent: 1.4em;
+}
+
+@mixin data-panel($width) {
+  margin-top: 44px;
+  li {
+    width: $width;
+    height: 65px;
+    float: left;
+    border-right: 1px solid #2f4979;
+    &:last-child {
+      border-right: none;
+    }
+    span {
+      &:first-child {
+        @include font(16px, 28px);
+        color: #bbbec3;
+        margin-top: -9px;
+      }
+      &:last-child {
+        @include font(36px, 28px);
+        color: #41b0ff;
+        margin-top: 27px;
+      }
+      display: block;
+      text-align: center;
+    }
+  }
+}
+
+@mixin panel($height) {
+  @include border-style(398px, $height);
+}
+
+.passager-flow {
+  @include panel(208px); // 面板总高
+  .data-panel {
+    @include data-panel(132px); // 列表宽度
+  }
+}
+
+.gender-radio, .average-age{
+  @include panel(208px); // 面板总高
+  .data-panel {
+    @include data-panel(198px); // 列表宽度
+  }
+}
+.flow-time, .collect-power, .ping{
+  @include panel(228px); // 面板总高
+  .data-panel {
+    @include data-panel(198px); // 列表宽度
+  }
+}
+.sales{
+  @include panel(226px); // 面板总高
+  .data-panel {
+    @include data-panel(198px); // 列表宽度
+  }
+}
+
+.age-gender-radio {
+  @include panel(286px); // 面板总高
+  .data-panel {
+    @include data-panel(198px); // 列表宽度
+  }
+  .data-panel {
+    margin-top: 81px;
+    li {
+      span {
+        margin-bottom: 13px;
+        &:first-child {
+          margin-top: -54px;
+          margin-bottom: 18px;
+        }
+        &:last-child {
+          font-size: 16px;
+          color: $fff;
+          margin-top: 21px;
+        }
+      }
+    }
+  }
+}
+
+.map-area {
+  .button {
+    width: 120px;
+    height: 44px;
+    background-color: #020a1c;
+    border-radius: 6px;
+    border: solid 1px #2f518e;
+    float: left;
+    margin-left: 40px;
+    -moz-box-shadow: 0px 0px 10px 2px rgba(#2f4979, 1) inset;
+    box-shadow: 0px 0px 10px 2px rgba(#2f4979, 1) inset;
+    &:last-child{
+      float: right;
+      margin-right: 40px;
+    }
+    li {
+      float: left;
+      &:first-child {
+        margin-left: 13px;
+        @include font(16px, 42px);
+      }
+      &:last-child {
+        float: right;
+        margin-right: 13px;
+        width: 10px;
+        height: 16px;
+        background-image: url("../images/tips.png");
+        margin-top: 14px;
+        span {
+          display: block;
+          width: 20px;
+          height: 21px;
+          cursor: pointer;
+          &:first-child{
+            margin-top: -14px;
+          }
+        }
+      }
+    }
+  }
+  .map{
+    //background: url("../images/map.png") center;
+    height: 978px;
+  }
 }
