@@ -75,9 +75,9 @@ $font_size26: 26px;
     margin-top: 4px;
     background: url('../images/tips-up.png');
   }
-  /*td{
-    text-align: center;
-  }*/
+  .table{
+    color: $gray3;
+  }
 }
 
 .eaharts {
@@ -168,11 +168,11 @@ $font_size26: 26px;
   //height: auto;
   background-color: #0c121f;
   .side-left {
-    width: 488px;
+    width: 420px;
     float: left;
+    margin-left: 88px;
     .content {
       float: left;
-      margin-left: 20px;
     }
   }
   .side-right {
@@ -186,7 +186,9 @@ $font_size26: 26px;
 
 .side-bar {
   width: 68px;
-  float: left;
+  position: absolute;
+  left: 0;
+  top: 62px;
   li {
     height: 80px;
     border-left: 4px solid #0c121f;
