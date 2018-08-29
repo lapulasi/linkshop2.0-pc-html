@@ -3,7 +3,7 @@
   margin-left: 68px !important; }
 
 .side-space {
-  padding: 0 2%; }
+  padding: 0 1.2%; }
 
 .filter-org {
   height: 80px;
@@ -146,7 +146,7 @@
   left: 0;
   top: 0;
   margin-top: 62px;
-  background-color: rgba(12, 18, 31, 0.8);
+  background-color: #0c121f;
   z-index: 2;
   box-sizing: border-box; }
   .side-bar li {
@@ -524,4 +524,4 @@
   .map-area .map {
     height: 970px; }
 
-/*# sourceMappingURL=page.cssmap */
+/*# sourceMappingURL=page.css.map */
