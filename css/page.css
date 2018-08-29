@@ -1,13 +1,21 @@
+.container-fluid {
+  width: calc(100% - 68px) !important;
+  margin-left: 68px !important; }
+
 .side-space {
   padding: 0 2%; }
 
 .filter-org {
   height: 80px;
-  overflow: hidden; }
+  overflow: hidden;
+  margin-top: 62px; }
   .filter-org > div {
     margin-top: 20px; }
     .filter-org > div p {
-      text-align: center; }
+      text-align: center;
+      color: #6c757d;
+      margin-bottom: 0;
+      margin-top: 6px; }
     .filter-org > div .start-date {
       margin-left: 20px; }
 
@@ -17,16 +25,18 @@
   .area-trend .title {
     font-size: 20px;
     line-height: 44px;
-    color: #333; }
-  .area-trend .area {
-    border-right: 1px solid #eee; }
-    .area-trend .area .area-table {
-      margin-right: 10px; }
-  .area-trend .trend .title {
+    color: #333;
     margin-left: 10px; }
-  .area-trend .trend button {
-    height: 40px;
-    margin: 9px 10px; }
+  .area-trend .area {
+    border-right: 10px solid #eee;
+    background: #fff; }
+    .area-trend .area .area-table {
+      margin: 0 10px; }
+  .area-trend .trend {
+    background: #fff; }
+    .area-trend .trend button {
+      height: 40px;
+      margin: 9px 10px; }
 
 .area-table span {
   float: left; }
@@ -39,9 +49,15 @@
 .area-table .table {
   color: #333; }
 
-.eaharts > div {
-  border-right: 1px solid #eee;
-  border-bottom: 1px solid #eee; }
+.eaharts {
+  margin-top: 10px; }
+  .eaharts > div {
+    border-right: 10px solid #eee;
+    background: #fff; }
+    .eaharts > div:last-child {
+      border: none; }
+  .eaharts:last-child {
+    margin-bottom: 40px; }
 
 .echarts-area {
   height: 400px; }
@@ -55,12 +71,16 @@
 
 .trend-analysis {
   width: 100%;
+  margin-right: 20px;
   height: 393px; }
 
 .top {
   width: 100%;
   height: 62px;
-  background-color: #0f1626; }
+  background-color: #0f1626;
+  position: fixed;
+  top: 0;
+  z-index: 3; }
   .top .logo {
     width: 488px;
     overflow: hidden;
@@ -105,6 +125,7 @@
   width: 100%;
   overflow: hidden;
   padding-bottom: 20px;
+  padding-top: 62px;
   background-color: #0c121f; }
   .main .side-left {
     width: 400px;
@@ -120,12 +141,17 @@
 
 .side-bar {
   width: 68px;
-  position: absolute;
+  height: 100%;
+  position: fixed;
   left: 0;
-  top: 62px; }
+  top: 0;
+  margin-top: 62px;
+  background-color: rgba(12, 18, 31, 0.8);
+  z-index: 2;
+  box-sizing: border-box; }
   .side-bar li {
     height: 80px;
-    border-left: 4px solid #0c121f;
+    border-left: 4px solid rgba(12, 18, 31, 0.1);
     cursor: pointer; }
     .side-bar li .icon {
       float: left;
@@ -454,40 +480,48 @@
         color: #fff;
         margin-top: 21px; }
 
-.map-area .button {
-  width: 120px;
-  height: 44px;
-  background-color: #020a1c;
-  border-radius: 6px;
-  border: solid 1px #2f518e;
-  float: left;
-  margin-left: 40px;
-  -moz-box-shadow: 0px 0px 10px 2px #2f4979 inset;
-  box-shadow: 0px 0px 10px 2px #2f4979 inset; }
-  .map-area .button:last-child {
-    float: right;
-    margin-right: 40px; }
-  .map-area .button li {
-    float: left; }
-    .map-area .button li:first-child {
-      margin-left: 13px;
-      font-size: 16px;
-      line-height: 42px; }
-    .map-area .button li:last-child {
+.map-area {
+  position: relative; }
+  .map-area .btns {
+    width: 100%;
+    height: 44px;
+    position: absolute;
+    top: 0;
+    z-index: 2; }
+  .map-area .button {
+    width: 120px;
+    height: 44px;
+    background-color: #020a1c;
+    border-radius: 6px;
+    border: solid 1px #2f518e;
+    float: left;
+    margin-left: 40px;
+    -moz-box-shadow: 0px 0px 10px 4px #2f4979 inset;
+    box-shadow: 0px 0px 10px 4px #2f4979 inset; }
+    .map-area .button:last-child {
       float: right;
-      margin-right: 13px;
-      width: 10px;
-      height: 16px;
-      background-image: url("../images/tips.png");
-      margin-top: 14px; }
-      .map-area .button li:last-child span {
-        display: block;
-        width: 20px;
-        height: 21px;
-        cursor: pointer; }
-        .map-area .button li:last-child span:first-child {
-          margin-top: -14px; }
-.map-area .map {
-  height: 978px; }
+      margin-right: 40px; }
+    .map-area .button li {
+      float: left; }
+      .map-area .button li:first-child {
+        margin-left: 13px;
+        font-size: 16px;
+        line-height: 42px; }
+      .map-area .button li:last-child {
+        float: right;
+        margin-right: 13px;
+        width: 10px;
+        height: 16px;
+        background-image: url("../images/tips.png");
+        margin-top: 14px; }
+        .map-area .button li:last-child span {
+          display: block;
+          width: 20px;
+          height: 21px;
+          cursor: pointer; }
+          .map-area .button li:last-child span:first-child {
+            margin-top: -14px; }
+  .map-area .map {
+    height: 970px; }
 
-/*# sourceMappingURL=page.css.map */
+/*# sourceMappingURL=page.cssmap */

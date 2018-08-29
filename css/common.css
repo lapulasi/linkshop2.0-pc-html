@@ -34,7 +34,7 @@ body {
   font-family: "Arial", "微软雅黑";
   color: #fff;
   position: relative;
-  background: #f5f6f8; }
+  background-color: #eee; }
 
 .fl {
   float: left; }
@@ -55,4 +55,4 @@ body {
   background: #fff;
   height: 100%; }
 
-/*# sourceMappingURL=common.css.map */
+/*# sourceMappingURL=common.css.map*/

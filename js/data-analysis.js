@@ -37,11 +37,14 @@ function getDataAnalysis() {
             containLabel: true
         },
         xAxis: {
+            axisLine: {
+                show: false
+            },
             axisTick: {
                 show: false
             },
             axisLabel: {
-                color: '#9FA4AC'
+                color: '#9FA4AC',
             },
             data: ["12.06", "12.07", "12.08", "12.09", "12.10", "12.11", "12.12", "12.13", "12.14", "12.15", "12.16", "12.17", "12.18", "12.19", "12.20", "12.06", "12.07", "12.08", "12.09", "12.10", "12.11", "12.12", "12.13", "12.14", "12.15", "12.16", "12.17", "12.18", "12.19", "12.20"]
         },
@@ -77,11 +80,11 @@ function getDataAnalysis() {
                 splitLine: {
                     show: true,
                     lineStyle: {
-                        color: '#312D3F'
+                        color: '#EAEDF2'
                     }
                 },
                 splitArea: {
-                    show: true,
+                    show: false,
                     areaStyle: {
                         color: '#2C293B'
                     }

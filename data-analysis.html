@@ -5,10 +5,31 @@
     <title>数据分析</title>
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/page.css">
     <script src="js/echarts.min.js"></script>
 </head>
 <body>
+<div class="top">
+    <ul class="logo">
+        <li><img src="images/logo.png" alt=""></li>
+        <li>门店零售高效解决方案</li>
+    </ul>
+    <ul class="user-info">
+        <li>[退出]</li>
+        <li><a href="#">Jack_Ma</a></li>
+        <li>您好!</li>
+    </ul>
+    <div class="org-name">深圳办事处</div>
+</div>
+<ul class="side-bar">
+    <li class="current"><span class="icon icon0"></span></li>
+    <li><span class="icon icon1"></span></li>
+    <li><span class="icon icon2"></span></li>
+    <li><span class="icon icon3"></span></li>
+    <li><span class="icon icon4"></span></li>
+    <li><span class="icon icon5"></span></li>
+</ul>
 <div class="container-fluid">
     <div class="filter-org">
         <div class="row side-space">
@@ -109,7 +130,7 @@
         </div>
     </div>
 
-    <div class="row eaharts">
+    <div class="row eaharts side-space">
         <div class="col">
             <p class="row eaharts-title">人流结构</p>
             <div class="row echarts-area" id="passenger-flow"></div>
@@ -128,7 +149,7 @@
         </div>
     </div>
 
-    <div class="row eaharts">
+    <div class="row eaharts side-space">
         <div class="col">
             <p class="row eaharts-title">驻留结构</p>
             <div class="row echarts-area" id="flow"></div>
@@ -147,7 +168,7 @@
         </div>
     </div>
 
-    <div class="row eaharts">
+    <div class="row eaharts side-space">
         <div class="col">
             <p class="row eaharts-title">集客力增长趋势</p>
             <div class="row echarts-area" id="collecting-power-growth-trend"></div>
