@@ -73,6 +73,10 @@ $font_size26: 26px;
     button {
       height: 40px;
       margin: 9px 10px;
+      &.current{
+        background: #6c757d;
+        color: $fff;
+      }
     }
   }
 }
@@ -418,6 +422,22 @@ $font_size26: 26px;
     top: 0;
     z-index: 2;
   }
+  .back-btn{
+    width: 62px;
+    height: 62px;
+    background-color: #020a1c;
+    border: solid 1px #2f4979;
+    -moz-box-shadow: 0px 0px 10px 1px rgba(#41b0ff, 1) inset;
+    box-shadow: 0px 0px 10px 1px rgba(#41b0ff, 1) inset;
+    @include font(16px, 62px);
+    text-align: center;
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    border-radius: 50%;
+    z-index: 2;
+    cursor: pointer;
+  }
   .button {
     width: 120px;
     height: 44px;
@@ -426,8 +446,8 @@ $font_size26: 26px;
     border: solid 1px #2f518e;
     float: left;
     margin-left: 40px;
-    -moz-box-shadow: 0px 0px 10px 4px rgba(#2f4979, 1) inset;
-    box-shadow: 0px 0px 10px 4px rgba(#2f4979, 1) inset;
+    -moz-box-shadow: 0px 0px 10px 1px rgba(#41b0ff, 1) inset;
+    box-shadow: 0px 0px 10px 1px rgba(#41b0ff, 1) inset;
     &:last-child{
       float: right;
       margin-right: 40px;
