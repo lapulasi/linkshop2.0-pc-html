@@ -28,10 +28,13 @@ function getDataAnalysis() {
             trigger: 'axis',
             showContent: false/*去掉浮层框*/
         },
-        legend: {},
+        legend: {
+            top: '0',
+            data:['销售趋势','门店趋势','顾客趋势']
+        },
         grid: {
             left: '3%',
-            top: '0%',
+            top: '10%',
             right: '0%',
             bottom: '2%',
             containLabel: true
@@ -98,7 +101,7 @@ function getDataAnalysis() {
             end: 50
         }],*/
         series: [{
-//            name: '销量',
+           name: '销售趋势',
             type: 'line',
             smooth: true,
             data: [5, 20, 36, 10, 10, 20, 36, 10, 10, 10, 10, 20, 20, 50, 20, 15, 20, 26, 30, 20, 50, 20, 26, 30, 30, 20, 50, 20, 26, 30],
@@ -110,7 +113,7 @@ function getDataAnalysis() {
             },
         },
             {
-//                name: '销量',
+               name: '门店趋势',
                 type: 'line',
                 smooth: true,
                 data: [15, 20, 26, 30, 20, 50, 20, 26, 30, 30, 20, 50, 20, 26, 30, 5, 20, 36, 10, 10, 20, 36, 10, 10, 10, 10, 20, 20, 50, 20],
@@ -122,6 +125,7 @@ function getDataAnalysis() {
                 },
             },
             {
+                name: '顾客趋势',
                 type: 'line',
                 smooth: true,
                 showSymbol: false,

@@ -4,7 +4,7 @@
   margin: 0px;
   padding: 0px; }
 
-input, button, select, textarea {
+input, button, select, textarea, li {
   /*去掉表单元素点击时的背景色*/
   outline: none; }
 
@@ -55,4 +55,4 @@ body {
   background: #fff;
   height: 100%; }
 
-/*# sourceMappingURL=common.css.map*/
+/*# sourceMappingURL=common.css.map */

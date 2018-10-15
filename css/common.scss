@@ -4,10 +4,11 @@
 * {
   margin: 0px;
   padding: 0px;
+  //padding: 0px;
   //-webkit-backface-visibility: hidden;
 }
 
-input, button, select, textarea { /*去掉表单元素点击时的背景色*/
+input, button, select, textarea, li { /*去掉表单元素点击时的背景色*/
   outline: none
 }
 
